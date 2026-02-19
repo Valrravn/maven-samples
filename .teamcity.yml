@@ -1,0 +1,10 @@
+jobs:
+  Job1:
+    name: Job 1
+    steps:
+      - type: script
+        script-content: |-
+          echo "Param 2 %defaultBranchName%"
+          echo "Param 3 %registryURL%"
+import-parameters:
+  - currentVersion
